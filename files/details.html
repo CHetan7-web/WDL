@@ -1,0 +1,79 @@
+<!DOCTYPE html> 
+<head> 
+<meta charset="utf-8"> 
+<title>First Page/Login Page</title> 
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" 
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="styles.css">
+
+</head> 
+<body class="bgimg">    
+    
+    <div>
+    <table class= "listtable text-center table table-bordered" style="width:30% ;height:80%;margin : 100px auto auto auto;background-color: #d5fab6;">
+        <tr>
+        <th><h1>Seat Type</h1></th>
+        <th><h1>Available Seats</h1></th>
+        </tr>
+        <tr>
+            <td><h3>seater ac</h3></td>
+            <td><h3 id = 'Seat1'></h3></td>
+        </tr>
+        <tr>    
+            <td><h3>seater non-ac</h3></td>
+            <td><h3 id = 'Seat2'></h3></td>
+        </tr>
+        <tr>
+            <td><h3>sleeper ac</h3></td>
+            <td><h3 id = 'Seat3'></h3></td>
+        </tr>    
+        <tr>
+            <td><h3>sleeper non-ac</h3></td>
+            <td><h3 id = 'Seat4'></h3></td>
+        </tr>
+
+        <script>    
+
+            function setSeats(){
+                var _DEFAULT_SIZE = 0
+
+                // This avilable seats value will be fetched using php for now it is default 
+                
+                var seats_avlb_type1 = _DEFAULT_SIZE
+                var seats_avlb_type2 = _DEFAULT_SIZE
+                var seats_avlb_type3 = _DEFAULT_SIZE
+                var seats_avlb_type4 = _DEFAULT_SIZE
+
+                if ( seats_avlb_type1 == 0) {
+                    seats_avlb_type1 = 'Not Available '
+                }
+                if ( seats_avlb_type2 == 0 ) {
+                        seats_avlb_type2 = 'Not Available '
+                    }
+                if (seats_avlb_type3 == 0) 
+                    {
+                    seats_avlb_type3 = 'Not Available '
+                    }
+                if ( seats_avlb_type4 == 0 )
+                    {
+                    seats_avlb_type4 = 'Not Available '
+                    }
+
+                
+                document.getElementById('Seat1').innerHTML = seats_avlb_type1
+                document.getElementById('Seat2').innerHTML = seats_avlb_type2
+                document.getElementById('Seat3').innerHTML = seats_avlb_type3
+                document.getElementById('Seat4').innerHTML = seats_avlb_type4
+            }
+
+            setSeats()
+
+
+        
+        </script>
+
+
+
+
+    </table>
+    </div>

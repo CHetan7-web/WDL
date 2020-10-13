@@ -1,0 +1,33 @@
+body{
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(https://wallpapercave.com/wp/wp4740888.jpg);
+    background-size: cover;
+}
+input:hover{
+    background-color:lightyellow;
+}
+
+a.adv:link{color:blue}
+
+a.adv:hover{text-decoration: underline;}
+
+.center {
+    margin: auto auto;
+  }
+
+.cont{s
+    height:300px;
+    width:400px;
+    /*background-color:#525252;*/
+    padding: 10px;
+    margin: 0 auto;
+}
+
+.listtable td, .listtable tr, .listtable th{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+.bgcont{
+    background-color: lightyellow;
+    height:300px;
+    width:400px;
+}
